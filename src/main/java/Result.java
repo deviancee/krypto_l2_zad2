@@ -27,7 +27,7 @@ public class Result {
 
     private String createResultString(byte[] key, byte[] message) {
         try {
-            return "key: " + new String(key, "ASCII") + "\n message: " + new String(message, "ASCII");
+            return "key: " + new String(key, "ASCII") + "\nmessage: " + new String(message, "ASCII");
         } catch (UnsupportedEncodingException e) {
             System.out.println("Unable to create message from key: " + Arrays.toString(key) + "and message: " + Arrays.toString(message));
             return "";
